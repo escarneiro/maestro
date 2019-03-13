@@ -8,15 +8,15 @@
 #Usage mastro.sh [-t <num threads] <hosts file> <commands file> 
 #The Hosts file is a plain text file, whose have a host/ip adrress per line
 #The commands file is also a plain text file, which have a command per line
-#The '-t' option is aimed at parallelizing the execution
+#The '-t' option is used for parallelizing 
 #Both files accept comments with a '#'
 
 #TODO:
 # - Print Better formatted messages on console
 # - Add better treatment for connection timeout
 
-#By adjusting some variables, someone could make this
-#script work for a variety of devices.
+#This script could be run in a variety of different devices, by
+#adjusting some of the few following variables.
 
 
 HOSTSFILE=$1
@@ -32,7 +32,7 @@ SSHCMD="ssh" #Maybe "ssh -oKexAlgorithms=+diffie-hellman-group1-sha1" or somethi
 
 #-#
 function usage () {
-	echo -e "\nUsage: mastro.sh [-t <int>] <hfile> <cmdfile> 
+	echo -e "\nUsage: maestro.sh [-t <int>] <hfile> <cmdfile> 
 where:	
   -t 		Number of concurrent execution threads (default=1)
   hfile 	File containing the targeted hosts
