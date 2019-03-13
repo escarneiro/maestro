@@ -32,7 +32,7 @@ SSHCMD="ssh" #Maybe "ssh -oKexAlgorithms=+diffie-hellman-group1-sha1" or somethi
 
 #-#
 function usage () {
-	echo -e "\nUso: huawei.sh [-t <int>] <hfile> <cmdfile> 
+	echo -e "\nUsage: mastro.sh [-t <int>] <hfile> <cmdfile> 
 where:	
   -t 		Number of concurrent execution threads (default=1)
   hfile 	File containing the targeted hosts
