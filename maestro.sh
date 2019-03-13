@@ -5,7 +5,7 @@
 #Author: Eder Carneiro	
 
 
-#Usage huawei.sh [-t <num threads] <hosts file> <commands file> 
+#Usage mastro.sh [-t <num threads] <hosts file> <commands file> 
 #The Hosts file is a plain text file, whose have a host/ip adrress per line
 #The commands file is also a plain text file, which have a command per line
 #The '-t' option is aimed at parallelizing the execution
